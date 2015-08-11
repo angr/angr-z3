@@ -40,14 +40,14 @@ try: os.makedirs(os.path.join(build_dir, 'build'))
 except OSError: pass
 
 setup(
-    name='z3',
+    name='angr-z3',
     version='4.4',
-    description='The Z3 Theorem Prover',
-    long_description='Z3 is a theorem prover from Microsoft Research.',
+    description='pip installable distribution of The Z3 Theorem Prover',
+    long_description='Z3 is a theorem prover from Microsoft Research. This version is slightly modified by the angr project to enable installation via pip.',
     author="The Z3 Theorem Prover Project",
     maintainer="Yan Shoshitaishvili",
     maintainer_email="yans@yancomm.net",
-    url='https://github.com/Z3Prover/z3',
+    url='https://github.com/angr/angr-z3',
     license='MIT License',
     keywords=['z3', 'smt', 'sat', 'prover', 'theorem'],
     package_dir={'': 'build'},
