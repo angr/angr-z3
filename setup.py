@@ -35,7 +35,7 @@ except OSError: pass
 
 setup(
     name='angr-z3',
-    version='4.4a',
+    version='4.4.0.1',
     description='pip installable distribution of The Z3 Theorem Prover',
     long_description='Z3 is a theorem prover from Microsoft Research. This version is slightly modified by the angr project to enable installation via pip.',
     author="The Z3 Theorem Prover Project",
