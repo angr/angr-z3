@@ -118,6 +118,7 @@ def _copy_sources():
     os.mkdir(os.path.join(SRC_DIR_LOCAL, 'src', 'api', 'python'))
     os.mkdir(os.path.join(SRC_DIR_LOCAL, 'src', 'api', 'python', 'z3'))
     open(os.path.join(SRC_DIR_LOCAL, 'src', 'api', 'python', 'z3', '.placeholder'), 'w').close()
+    open(os.path.join(SRC_DIR_LOCAL, 'src', 'api', 'python', 'z3test.py'), 'w').close()
 
 class build(_build):
     def run(self):
@@ -164,6 +165,6 @@ setup(
     package_data={
         'z3': [os.path.join('lib', '*'), os.path.join('include', '*.h'), os.path.join('include', 'c++', '*.h')]
     },
-    scripts=[os.path.join('bin', EXECUTABLE_FILE)],
+#    scripts=[os.path.join('bin', EXECUTABLE_FILE)],
     cmdclass={'build': build, 'develop': develop, 'sdist': sdist, 'bdist_egg': bdist_egg},
 )
