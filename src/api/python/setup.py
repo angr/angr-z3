@@ -172,7 +172,7 @@ if 'bdist_wheel' in sys.argv and '--plat-name' not in sys.argv:
 
 setup(
     name='z3-solver',
-    version=_z3_version(),
+    version=_z3_version() + '.post1',
     description='an efficient SMT solver library',
     long_description='Z3 is a theorem prover from Microsoft Research with support for bitvectors, booleans, arrays, floating point numbers, strings, and other data types.\n\nFor documentation, please read http://z3prover.github.io/api/html/z3.html\n\nIn the event of technical difficulties related to configuration, compiliation, or installation, please submit issues to https://github.com/angr/angr-z3',
     author="The Z3 Theorem Prover Project",
